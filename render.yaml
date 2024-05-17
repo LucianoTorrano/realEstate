@@ -1,12 +1,12 @@
 databases:
-  - name: mysite-9nso
-    databaseName: mysite-9nso
+  - name: mysite
+    databaseName: mysite
     user: luciano
     plan: free
 
 services:
   - type: web
-    name: mysite-9nso
+    name: mysite
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
@@ -15,7 +15,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: mysite-9nso
+          name: mysite
           property: connectionString
       - key: c2ea0d6a62eecbb1c35134d220023559
         sync: false
