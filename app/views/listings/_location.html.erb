@@ -1,0 +1,8 @@
+<div>
+  <h3 class="font-bold text-xs underline underline-offset-1"><%= state_name %></h3>
+  <ul class= "mb-2">
+    <% cities.each do |city| %>
+      <li class="text-xs underline underline-offset-2" ><%= link_to city, '#' %></li>
+    <% end %>
+  </ul>
+</div>

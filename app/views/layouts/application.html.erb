@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Real Estate</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+  </head>
+
+  <body class="relative bg-custom-pattern bg-no-repeat bg-left md:bg-top">
+
+    <%= render 'listings/header' %>
+    <main class="container mx-auto my-8 px-5 flex flex-col">
+      <%= render 'listings/city-description' %>
+      <%= render 'listings/search-buttons' %>
+      <%= yield %>
+    </main>
+    <%= render 'listings/footer' %>
+
+  </body>
+</html>

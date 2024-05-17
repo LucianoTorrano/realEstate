@@ -1,0 +1,52 @@
+
+<div class="flex gap-2 mt-8 items-center justify-center">
+  <p class= "text-search-description text-base font-base hover:underline cursor-pointer">For Sale</p>
+  <svg class="h-4 w-4 rotate-[-90deg]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+  </svg>
+  <p class= "text-search-description text-base font-base hover:underline cursor-pointer">Georgia</p>
+  <svg class="h-4 w-4 rotate-[-90deg]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+  </svg>
+  <p class= "text-base font-base">Atlanta</p>
+</div>
+<div class="bg-gray-custom text-white p-12 mt-8">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
+    <div>
+      <h2 class="font-bold text-lg mb-2">Nearby Real Estate</h2>
+      <ul>
+        <li class="mt-2"><%= link_to "Open Houses Near Me", root_path, class: "text-search-description text-base font-base hover:underline" %></li>
+        <li class="mt-2"><%= link_to "Land for Sale Near Me", root_path, class: "text-search-description text-base font-base hover:underline" %></li>
+        <li class="mt-2"><%= link_to "Townhomes for Sale Near Me", root_path, class: "text-search-description text-base font-base hover:underline" %></li>
+        <li class="mt-2"><%= link_to "See All", root_path, class: "text-search-description text-base font-bold hover:underline" %></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="font-bold mb-2">Nearby Zip Codes</h2>
+      <ul>
+        <li class="mt-2"><%= link_to "31198", root_path, class: "text-search-description text-base font-base hover:underline" %></li>
+        <li class="mt-2"><%= link_to "30314", root_path, class: "text-search-description text-base font-base hover:underline" %></li>
+        <li class="mt-2"><%= link_to "31191", root_path, class: "text-search-description text-base font-base hover:underline" %></li>
+        <li class="mt-2"><%= link_to "See All", root_path, class: "text-search-description text-base font-bold hover:underline" %></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="font-bold mb-2">Atlanta Neighborhoods</h2>
+      <ul>
+        <li class="mt-2"><%= link_to "Bankhead", root_path, class: "text-search-description text-base font-base hover:underline" %></li>
+        <li class="mt-2"><%= link_to "Vine City", root_path, class: "text-search-description text-base font-base hover:underline" %></li>
+        <li class="mt-2"><%= link_to "Atlanta University Center", root_path, class: "text-search-description text-base font-base hover:underline" %></li>
+        <li class="mt-2"><%= link_to "See All", root_path, class: "text-search-description text-base font-bold hover:underline" %></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="font-bold mb-2">Atlanta Property Types</h2>
+      <ul>
+        <li class="mt-2"><%= link_to "For Sale by Owner (FSBO)", root_path, class: "text-search-description text-base font-base hover:underline" %></li>
+        <li class="mt-2"><%= link_to "Single Family Homes", root_path, class: "text-search-description text-base font-base hover:underline" %></li>
+        <li class="mt-2"><%= link_to "Condos", root_path, class: "text-search-description text-base font-base hover:underline" %></li>
+        <li class="mt-2"><%= link_to "See All", root_path, class: "text-search-description text-base font-bold hover:underline" %></li>
+      </ul>
+    </div>
+  </div>
+</div>

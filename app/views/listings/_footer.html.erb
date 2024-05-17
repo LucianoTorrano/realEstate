@@ -1,0 +1,55 @@
+<footer class="bg-[#7DADAF] py-10 mt-20">
+  <div class="container justify-center mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 flex flex-col md:flex-row">
+    <div class="md:mr-8 flex flex-col items-center justify-start" >
+    <img src="<%= asset_path('footer-logo.svg') %>" alt="Logo" class="h-16">
+    <p class="text-base font-light tracking-[0.5em] mt-2"> SEARCH</p>
+    </div>
+    <div>
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="w-100 md:w-7/12">
+          <p class="text-white text-3xl font-semibold mb-2 text-center md:text-left">A better way to discover real estate.</p>
+          <nav class="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start">
+            <div class="space-y-2 space-x-4 md:space-x-8">
+              <%= link_to "Find a Home", root_path, class: "text-sm  hover:text-teal-600" %>
+              <%= link_to "Sell", root_path, class: "text-sm  hover:text-teal-600" %>
+              <%= link_to "Where to Live", root_path, class: "text-sm  hover:text-teal-600" %>
+              <%= link_to "Neighborhoods", root_path, class: "text-sm  hover:text-teal-600" %>
+            </div>
+          </nav>
+          <nav class="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start">
+            <div class="space-y-2 space-x-2  md:space-x-4">
+              <%= link_to "Blog", root_path, class: "text-xs hover:text-teal-600" %>
+              <%= link_to "Favorites", root_path, class: "text-xs  hover:text-teal-600" %>
+              <%= link_to "Saved Searches", root_path, class: "text-xs  hover:text-teal-600" %>
+              <%= link_to "Login", root_path, class: "text-xs  hover:text-teal-600" %>
+              <%= link_to "About EZ Home Search", root_path, class: "text-xs  hover:text-teal-600" %>
+            </div>
+          </nav>
+        </div>
+        <div class="mt-8 md:mt-0 flex flex-col items-center justify-center text-center">
+          <p class="">3541 Fountain Lane<br>Myrtle Beach, SC 29577<br>(843) 310-6220</p>
+          <div class="flex mt-4 space-x-4">
+            <%= link_to inline_svg('facebook.svg'), root_path, class: " hover:text-teal-600" %>
+            <%= link_to inline_svg('instagram.svg'), root_path, class: " hover:text-teal-600" %>
+            <%= link_to inline_svg('linkedin.svg'), root_path, class: " hover:text-teal-600" %>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 w-full h-0.5 bg-white" />
+      <%= render 'listings/locations' %>
+      <hr class="my-6 w-full h-0.5 bg-white" />
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="text-xs font-semibold mb-4 md:mb-0">
+          <%= link_to "Accessibility", root_path, class: "hover:text-teal-600" %>
+          <%= link_to "Terms of Service", root_path, class: "ml-4 hover:text-teal-600" %>
+          <%= link_to "Privacy Policy", root_path, class: "ml-4 hover:text-teal-600" %>
+          <%= link_to "DMCA Notice", root_path, class: "ml-4 hover:text-teal-600" %>
+          <%= link_to "Sitemap", root_path, class: "ml-4 hover:text-teal-600" %>
+        </div>
+        <div class="text-xs font-semibold">
+          &copy; Copyright 2024 EZ Home Search. All Rights Reserved.
+        </div>
+      </div>    
+    </div>
+  </div>
+</footer>

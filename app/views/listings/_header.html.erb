@@ -1,0 +1,53 @@
+<header class="h-28 md:h-40 w-full fixed top-0 nav-bg transition-colors duration-200 z-10 ">
+<nav class="flex justify-between items-center w-full mx-auto max-w-4xl px-4  lg:max-w-7xl lg:px-8 relative z-40">
+    <div class="relative z-10">
+        <%= link_to '', root_path %>
+          <img class="cursor-pointer w-32 md:w-full" src="./assets/logo.svg" alt="ez logo">
+    </div>
+    <div class="flex">
+      <div
+      class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[100vh] left-0 w-[100vw] top-[-100vh] md:w-auto w-full bg-white md:bg-transparent flex items-start pt-[12rem] md:pt-0 md:items-center px-5">
+      <ul class="flex md:flex-row flex-col items-start md:items-center justify-start md:justify-end md:gap-[2vw] lg:gap-[3vw] gap-8">
+          <li>
+              <%= link_to 'Find a Home', root_path, class:"hover:text-gray-500 font-semibold" %>
+          </li>
+          <li>
+              <%= link_to 'Sell', root_path, class:"hover:text-gray-500 font-semibold" %>
+          </li>
+          <li class="relative">
+              <%= link_to 'Where To Live', root_path, class:"hover:text-gray-500 font-semibold" %>
+              <svg class="absolute top-[0] md:top-[100%] right-[-2rem] rotate-[-90deg] md:rotate-[0]  md:inset-x-0 md:w-full" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 6C24 12.6274 18.6274 18 12 18C5.37258 18 0 12.6274 0 6H7L12 11.5L17.5 6H24Z" fill="#262A3B"/>
+              </svg>
+          </li>
+          <li class="relative">
+              <%= link_to 'Local Resources', root_path, class:"hover:text-gray-500 font-semibold" %>
+              <svg class="absolute top-[0] md:top-[100%] right-[-2rem] rotate-[-90deg] md:rotate-[0]  md:inset-x-0 md:w-full" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 6C24 12.6274 18.6274 18 12 18C5.37258 18 0 12.6274 0 6H7L12 11.5L17.5 6H24Z" fill="#262A3B"/>
+              </svg>
+          </li>
+          <li class="text-4xl cursor-default h-12 w-0.5 bg-black mr-3 hidden md:block"></li>
+      </ul>
+  </div>
+  <div class="flex items-center gap-6 relative z-10">
+      <button class="bg-[#30677B] text-white text-xs md:text-base px-5 py-2 rounded hover:bg-[#01576E]">LOGIN</button>
+      <ion-icon onclick="onToggleMenu(this)" name="menu" class="menuButton text-3xl cursor-pointer md:hidden"></ion-icon>
+  </div>
+  <ul class="absolute top-5 right-2 flex flex-row items-end gap-2.5">
+    <li>
+      <%= link_to 'BLOG', root_path, class:"hover:text-gray-500 text-[0.6rem] md:text-xs font-bold" %>
+    </li>
+    <li>
+      <%= link_to 'FAVORITES', root_path, class:"hover:text-gray-500 text-[0.6rem] md:text-xs font-bold" %>
+    </li>
+    <li>
+      <%= link_to 'SAVED SEARCH', root_path, class:"hover:text-gray-500 text-[0.6rem] md:text-xs font-bold" %>
+    </li>
+  </ul>
+    </div>
+</nav>
+</header>
+<div class="w-full mt-28 md:mt-40">
+  <img src="./assets/city.jpg" alt="city" class="w-full h-content">
+</div>
+<%= javascript_include_tag 'components/navbar' %>
