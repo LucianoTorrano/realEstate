@@ -18,7 +18,7 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
-        'custom-pattern': "url('/assets/background.png')",
+        'custom-pattern': "url('<%= asset_path('background.png) %>')",
       },
     },
   },
