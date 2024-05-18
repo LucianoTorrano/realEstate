@@ -7,5 +7,5 @@ pin "@hotwired/stimulus-loading", to: "stimulus-loading.js"
 pin_all_from "app/javascript/controllers", under: "controllers"
 
 # config/importmap.rb
-pin "components/navbar", to: "navbar.js"
-pin "components/dropdown", to: "dropdown.js"
+pin "components/navbar", to: "assets/javascript/components/navbar.js"
+pin "components/dropdown", to: "assets/javascript/components/dropdown.js"
