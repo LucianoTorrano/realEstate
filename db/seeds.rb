@@ -2,7 +2,7 @@ Listing.destroy_all
 
 Listing.create!([
   {
-    image_url: "assets/house1.png",
+    image_url: "house1.png",
     is_new: true,
     is_favorite: false,
     price: "$750,000",
@@ -11,7 +11,7 @@ Listing.create!([
     real_estate_name: "Realty ONE Group DocksideNorth"
   },
   {
-    image_url: "assets/house2.png",
+    image_url: "house2.png",
     is_new: true,
     is_favorite: false,
     price: "$575,000",
@@ -20,7 +20,7 @@ Listing.create!([
     real_estate_name: "Realty ONE Group DocksideNorth"
   },
   {
-    image_url: "assets/house3.png",
+    image_url: "house3.png",
     is_new: false,
     is_favorite: false,
     price: "$1,119,000",
@@ -29,7 +29,7 @@ Listing.create!([
     real_estate_name: "Realty ONE Group DocksideNorth"
   },
   {
-    image_url: "assets/house4.png",
+    image_url: "house4.png",
     is_new: true,
     is_favorite: true,
     price: "$1,200,000",
@@ -38,7 +38,7 @@ Listing.create!([
     real_estate_name: "Realty ONE Group DocksideNorth"
   },
   {
-    image_url: "assets/house5.png",
+    image_url: "house5.png",
     is_new: true,
     is_favorite: false,
     price: "$2,345,000",
@@ -47,7 +47,7 @@ Listing.create!([
     real_estate_name: "Realty ONE Group DocksideNorth"
   },
   {
-    image_url: "assets/house6.png",
+    image_url: "house6.png",
     is_new: true,
     is_favorite: true,
     price: "$1,195,000",
@@ -56,7 +56,7 @@ Listing.create!([
     real_estate_name: "Realty ONE Group DocksideNorth"
   },
   {
-    image_url: "assets/house7.png",
+    image_url: "house7.png",
     is_new: true,
     is_favorite: true,
     price: "$2,250,000",
@@ -65,7 +65,7 @@ Listing.create!([
     real_estate_name: "Realty ONE Group DocksideNorth"
   },
   {
-    image_url: "assets/house8.png",
+    image_url: "house8.png",
     is_new: false,
     is_favorite: false,
     price: "$2,650,000",
@@ -74,7 +74,7 @@ Listing.create!([
     real_estate_name: "Realty ONE Group DocksideNorth"
   },
   {
-    image_url: "assets/house9.png",
+    image_url: "house9.png",
     is_new: true,
     is_favorite: false,
     price: "$2,050,000",
@@ -83,7 +83,7 @@ Listing.create!([
     real_estate_name: "Realty ONE Group DocksideNorth"
   },
   {
-    image_url: "assets/house10.png",
+    image_url: "house10.png",
     is_new: true,
     is_favorite: false,
     price: "$624,000",
@@ -92,7 +92,7 @@ Listing.create!([
     real_estate_name: "Realty ONE Group DocksideNorth"
   },
   {
-    image_url: "assets/house10.png",
+    image_url: "house10.png",
     is_new: true,
     is_favorite: false,
     price: "$624,000",
@@ -101,7 +101,7 @@ Listing.create!([
     real_estate_name: "Realty ONE Group DocksideNorth"
   },
   {
-    image_url: "assets/house10.png",
+    image_url: "house10.png",
     is_new: true,
     is_favorite: false,
     price: "$624,000",

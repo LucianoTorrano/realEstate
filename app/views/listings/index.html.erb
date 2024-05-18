@@ -5,7 +5,7 @@
       <a href="#" class="group">
         <% if listing.image_url.present? %>
           <div dir="rtl" class="relative rounded-t aspect-h-3 aspect-w-4 w-full overflow-hidden bg-gray-200">
-            <img src="<%= listing.image_url %>" alt="Listing image" class="h-full w-full object-cover object-center group-hover:opacity-75">
+            <img src="<%= asset_path(listing.image_url) %>" alt="Listing image" class="h-full w-full object-cover object-center group-hover:opacity-75">
             <div class="absolute top-1.5 right-1.5 rounded-full bg-black h-8 w-8 flex justify-center items-center">
               <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.217 18.9204L10.2171 18.9205C10.6243 19.2938 11.1596 19.5 11.7143 19.5C12.269 19.5 12.8043 19.2938 13.2115 18.9205L13.2115 18.9204L20.7738 11.9856C22.149 10.7281 22.9286 8.96245 22.9286 7.11508V6.87665C22.9286 3.75167 20.6312 1.09805 17.5123 0.586715L17.5121 0.586696C15.4479 0.248766 13.3454 0.910724 11.8661 2.36371C11.7818 2.44652 11.6467 2.44652 11.5624 2.36371C10.0832 0.910724 7.98064 0.248766 5.91643 0.586696L5.91632 0.586715C2.79741 1.09805 0.5 3.75167 0.5 6.87665V7.11508C0.5 8.96228 1.27942 10.7278 2.65442 11.9853C2.65454 11.9854 2.65466 11.9855 2.65478 11.9856L10.217 18.9204ZM17.432 1.07609V1.07608V1.07609ZM5.99704 1.07911L5.99704 1.07912L5.99704 1.07911Z" fill="<%= listing.is_favorite? ? '#C3D085' : '#fff' %>" stroke="#000112"/>
